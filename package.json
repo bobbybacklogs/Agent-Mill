@@ -1,28 +1,36 @@
 {
   "name": "agent-mill",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Find, verify, install, and create reusable AI agents and skills.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bobbybacklogs/Agent-Mill.git"
+    "url": "git+https://github.com/bobbybacklogs/Agent-Mill.git"
   },
   "homepage": "https://github.com/bobbybacklogs/Agent-Mill#readme",
-  "bugs": { "url": "https://github.com/bobbybacklogs/Agent-Mill/issues" },
+  "bugs": {
+    "url": "https://github.com/bobbybacklogs/Agent-Mill/issues"
+  },
   "type": "module",
   "bin": {
-    "agent-mill": "./dist/cli.js",
-    "agentmill": "./dist/cli.js"
+    "agent-mill": "dist/cli.js",
+    "agentmill": "dist/cli.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "node --import tsx --test test/*.test.ts",
     "check": "npm run typecheck && npm test && npm run build"
   },
-  "engines": { "node": ">=20.12" },
+  "engines": {
+    "node": ">=20.12"
+  },
   "dependencies": {
     "@inquirer/prompts": "^7.8.0",
     "codex2code": "^0.4.0",
