@@ -1,4 +1,7 @@
 # Agent Mill
+<p align="center">
+  <img src="./repo_assets/main.png" width="600">
+</p>
 
 [![npm version](https://img.shields.io/npm/v/agent-mill?logo=npm)](https://www.npmjs.com/package/agent-mill)
 [![CI](https://github.com/bobbybacklogs/Agent-Mill/actions/workflows/ci.yml/badge.svg)](https://github.com/bobbybacklogs/Agent-Mill/actions/workflows/ci.yml)
